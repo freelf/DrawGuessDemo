@@ -15,6 +15,30 @@
 		2BCFBC7E229C012E0016A96B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBC7D229C012E0016A96B /* main.m */; };
 		2BCFBC88229C012E0016A96B /* DrawGuessDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBC87229C012E0016A96B /* DrawGuessDemoTests.m */; };
 		2BCFBC93229C012E0016A96B /* DrawGuessDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBC92229C012E0016A96B /* DrawGuessDemoUITests.m */; };
+		2BCFBCD4229C01660016A96B /* CanvasData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCA3229C01660016A96B /* CanvasData.m */; };
+		2BCFBCD5229C01660016A96B /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCA6229C01660016A96B /* Canvas.m */; };
+		2BCFBCD6229C01660016A96B /* LineStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCA9229C01660016A96B /* LineStrip.m */; };
+		2BCFBCD7229C01660016A96B /* Chartlet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCAB229C01660016A96B /* Chartlet.m */; };
+		2BCFBCD8229C01660016A96B /* ChangeCanvasColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCAC229C01660016A96B /* ChangeCanvasColor.m */; };
+		2BCFBCD9229C01660016A96B /* MLLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCAD229C01660016A96B /* MLLine.m */; };
+		2BCFBCDA229C01660016A96B /* GlowingBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCB3229C01660016A96B /* GlowingBrush.m */; };
+		2BCFBCDB229C01660016A96B /* Brush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCB5229C01660016A96B /* Brush.m */; };
+		2BCFBCDC229C01660016A96B /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCB6229C01660016A96B /* Printer.m */; };
+		2BCFBCDD229C01660016A96B /* Eraser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCB8229C01660016A96B /* Eraser.m */; };
+		2BCFBCDE229C01660016A96B /* pen-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCFBCBB229C01660016A96B /* pen-texture.png */; };
+		2BCFBCDF229C01660016A96B /* glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCFBCBC229C01660016A96B /* glow.png */; };
+		2BCFBCE0229C01660016A96B /* Maths.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCBE229C01660016A96B /* Maths.m */; };
+		2BCFBCE1229C01660016A96B /* BezierGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCBF229C01660016A96B /* BezierGenerator.m */; };
+		2BCFBCE2229C01660016A96B /* PaintingGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCC0229C01660016A96B /* PaintingGestureRecognizer.m */; };
+		2BCFBCE3229C01660016A96B /* MLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCC5229C01660016A96B /* MLTexture.m */; };
+		2BCFBCE4229C01660016A96B /* SnapshotTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCC6229C01660016A96B /* SnapshotTarget.m */; };
+		2BCFBCE5229C01660016A96B /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCC7229C01660016A96B /* MetalView.m */; };
+		2BCFBCE6229C01660016A96B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCC9229C01660016A96B /* Shaders.metal */; };
+		2BCFBCE7229C01660016A96B /* RenderTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCCA229C01660016A96B /* RenderTarget.m */; };
+		2BCFBCE8229C01660016A96B /* MLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCCD229C01660016A96B /* MLColor.m */; };
+		2BCFBCE9229C01660016A96B /* WBMetalCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCD2229C01660016A96B /* WBMetalCanvasView.m */; };
+		2BCFBCEF229C02480016A96B /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFBCEE229C02480016A96B /* UIColor+Extension.m */; };
+		2BCFBCF1229C04730016A96B /* ddd.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BCFBCF0229C04730016A96B /* ddd.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +75,51 @@
 		2BCFBC8E229C012E0016A96B /* DrawGuessDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawGuessDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCFBC92229C012E0016A96B /* DrawGuessDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGuessDemoUITests.m; sourceTree = "<group>"; };
 		2BCFBC94229C012E0016A96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCFBCA3229C01660016A96B /* CanvasData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasData.m; sourceTree = "<group>"; };
+		2BCFBCA4229C01660016A96B /* CanvasData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasData.h; sourceTree = "<group>"; };
+		2BCFBCA6229C01660016A96B /* Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
+		2BCFBCA7229C01660016A96B /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		2BCFBCA9229C01660016A96B /* LineStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineStrip.m; sourceTree = "<group>"; };
+		2BCFBCAA229C01660016A96B /* MLLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLine.h; sourceTree = "<group>"; };
+		2BCFBCAB229C01660016A96B /* Chartlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chartlet.m; sourceTree = "<group>"; };
+		2BCFBCAC229C01660016A96B /* ChangeCanvasColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeCanvasColor.m; sourceTree = "<group>"; };
+		2BCFBCAD229C01660016A96B /* MLLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLine.m; sourceTree = "<group>"; };
+		2BCFBCAE229C01660016A96B /* LineStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineStrip.h; sourceTree = "<group>"; };
+		2BCFBCAF229C01660016A96B /* Chartlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartlet.h; sourceTree = "<group>"; };
+		2BCFBCB0229C01660016A96B /* ChangeCanvasColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeCanvasColor.h; sourceTree = "<group>"; };
+		2BCFBCB2229C01660016A96B /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		2BCFBCB3229C01660016A96B /* GlowingBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlowingBrush.m; sourceTree = "<group>"; };
+		2BCFBCB4229C01660016A96B /* Eraser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eraser.h; sourceTree = "<group>"; };
+		2BCFBCB5229C01660016A96B /* Brush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brush.m; sourceTree = "<group>"; };
+		2BCFBCB6229C01660016A96B /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Printer.m; sourceTree = "<group>"; };
+		2BCFBCB7229C01660016A96B /* GlowingBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlowingBrush.h; sourceTree = "<group>"; };
+		2BCFBCB8229C01660016A96B /* Eraser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eraser.m; sourceTree = "<group>"; };
+		2BCFBCB9229C01660016A96B /* Brush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brush.h; sourceTree = "<group>"; };
+		2BCFBCBB229C01660016A96B /* pen-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pen-texture.png"; sourceTree = "<group>"; };
+		2BCFBCBC229C01660016A96B /* glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow.png; sourceTree = "<group>"; };
+		2BCFBCBE229C01660016A96B /* Maths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maths.m; sourceTree = "<group>"; };
+		2BCFBCBF229C01660016A96B /* BezierGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierGenerator.m; sourceTree = "<group>"; };
+		2BCFBCC0229C01660016A96B /* PaintingGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingGestureRecognizer.m; sourceTree = "<group>"; };
+		2BCFBCC1229C01660016A96B /* Maths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maths.h; sourceTree = "<group>"; };
+		2BCFBCC2229C01660016A96B /* PaintingGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingGestureRecognizer.h; sourceTree = "<group>"; };
+		2BCFBCC3229C01660016A96B /* BezierGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierGenerator.h; sourceTree = "<group>"; };
+		2BCFBCC5229C01660016A96B /* MLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTexture.m; sourceTree = "<group>"; };
+		2BCFBCC6229C01660016A96B /* SnapshotTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotTarget.m; sourceTree = "<group>"; };
+		2BCFBCC7229C01660016A96B /* MetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
+		2BCFBCC8229C01660016A96B /* MLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLColor.h; sourceTree = "<group>"; };
+		2BCFBCC9229C01660016A96B /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		2BCFBCCA229C01660016A96B /* RenderTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderTarget.m; sourceTree = "<group>"; };
+		2BCFBCCB229C01660016A96B /* SnapshotTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotTarget.h; sourceTree = "<group>"; };
+		2BCFBCCC229C01660016A96B /* MLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTexture.h; sourceTree = "<group>"; };
+		2BCFBCCD229C01660016A96B /* MLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLColor.m; sourceTree = "<group>"; };
+		2BCFBCCE229C01660016A96B /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
+		2BCFBCCF229C01660016A96B /* RenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderTarget.h; sourceTree = "<group>"; };
+		2BCFBCD1229C01660016A96B /* WBMetalCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMetalCanvasView.h; sourceTree = "<group>"; };
+		2BCFBCD2229C01660016A96B /* WBMetalCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMetalCanvasView.m; sourceTree = "<group>"; };
+		2BCFBCD3229C01660016A96B /* WBDrawGuessDefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDrawGuessDefineHeader.h; sourceTree = "<group>"; };
+		2BCFBCED229C02480016A96B /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		2BCFBCEE229C02480016A96B /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		2BCFBCF0229C04730016A96B /* ddd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ddd.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +170,14 @@
 		2BCFBC6D229C012D0016A96B /* DrawGuessDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BCFBCF0229C04730016A96B /* ddd.json */,
+				2BCFBCA0229C01660016A96B /* DrawGuess */,
 				2BCFBC6E229C012D0016A96B /* AppDelegate.h */,
 				2BCFBC6F229C012D0016A96B /* AppDelegate.m */,
 				2BCFBC71229C012D0016A96B /* ViewController.h */,
 				2BCFBC72229C012D0016A96B /* ViewController.m */,
+				2BCFBCED229C02480016A96B /* UIColor+Extension.h */,
+				2BCFBCEE229C02480016A96B /* UIColor+Extension.m */,
 				2BCFBC74229C012D0016A96B /* Main.storyboard */,
 				2BCFBC77229C012E0016A96B /* Assets.xcassets */,
 				2BCFBC79229C012E0016A96B /* LaunchScreen.storyboard */,
@@ -130,6 +203,127 @@
 				2BCFBC94229C012E0016A96B /* Info.plist */,
 			);
 			path = DrawGuessDemoUITests;
+			sourceTree = "<group>";
+		};
+		2BCFBCA0229C01660016A96B /* DrawGuess */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCA1229C01660016A96B /* MaLiang */,
+				2BCFBCD0229C01660016A96B /* Canvas */,
+				2BCFBCD3229C01660016A96B /* WBDrawGuessDefineHeader.h */,
+			);
+			path = DrawGuess;
+			sourceTree = "<group>";
+		};
+		2BCFBCA1229C01660016A96B /* MaLiang */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCA2229C01660016A96B /* Data & Documents */,
+				2BCFBCA5229C01660016A96B /* Canvas */,
+				2BCFBCA8229C01660016A96B /* Elements */,
+				2BCFBCB1229C01660016A96B /* Brush */,
+				2BCFBCBA229C01660016A96B /* Resource */,
+				2BCFBCBD229C01660016A96B /* Math & Utils */,
+				2BCFBCC4229C01660016A96B /* Base */,
+			);
+			path = MaLiang;
+			sourceTree = "<group>";
+		};
+		2BCFBCA2229C01660016A96B /* Data & Documents */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCA3229C01660016A96B /* CanvasData.m */,
+				2BCFBCA4229C01660016A96B /* CanvasData.h */,
+			);
+			path = "Data & Documents";
+			sourceTree = "<group>";
+		};
+		2BCFBCA5229C01660016A96B /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCA6229C01660016A96B /* Canvas.m */,
+				2BCFBCA7229C01660016A96B /* Canvas.h */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		2BCFBCA8229C01660016A96B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCA9229C01660016A96B /* LineStrip.m */,
+				2BCFBCAA229C01660016A96B /* MLLine.h */,
+				2BCFBCAB229C01660016A96B /* Chartlet.m */,
+				2BCFBCAC229C01660016A96B /* ChangeCanvasColor.m */,
+				2BCFBCAD229C01660016A96B /* MLLine.m */,
+				2BCFBCAE229C01660016A96B /* LineStrip.h */,
+				2BCFBCAF229C01660016A96B /* Chartlet.h */,
+				2BCFBCB0229C01660016A96B /* ChangeCanvasColor.h */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		2BCFBCB1229C01660016A96B /* Brush */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCB2229C01660016A96B /* Printer.h */,
+				2BCFBCB3229C01660016A96B /* GlowingBrush.m */,
+				2BCFBCB4229C01660016A96B /* Eraser.h */,
+				2BCFBCB5229C01660016A96B /* Brush.m */,
+				2BCFBCB6229C01660016A96B /* Printer.m */,
+				2BCFBCB7229C01660016A96B /* GlowingBrush.h */,
+				2BCFBCB8229C01660016A96B /* Eraser.m */,
+				2BCFBCB9229C01660016A96B /* Brush.h */,
+			);
+			path = Brush;
+			sourceTree = "<group>";
+		};
+		2BCFBCBA229C01660016A96B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCBB229C01660016A96B /* pen-texture.png */,
+				2BCFBCBC229C01660016A96B /* glow.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2BCFBCBD229C01660016A96B /* Math & Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCBE229C01660016A96B /* Maths.m */,
+				2BCFBCBF229C01660016A96B /* BezierGenerator.m */,
+				2BCFBCC0229C01660016A96B /* PaintingGestureRecognizer.m */,
+				2BCFBCC1229C01660016A96B /* Maths.h */,
+				2BCFBCC2229C01660016A96B /* PaintingGestureRecognizer.h */,
+				2BCFBCC3229C01660016A96B /* BezierGenerator.h */,
+			);
+			path = "Math & Utils";
+			sourceTree = "<group>";
+		};
+		2BCFBCC4229C01660016A96B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCC5229C01660016A96B /* MLTexture.m */,
+				2BCFBCC6229C01660016A96B /* SnapshotTarget.m */,
+				2BCFBCC7229C01660016A96B /* MetalView.m */,
+				2BCFBCC8229C01660016A96B /* MLColor.h */,
+				2BCFBCC9229C01660016A96B /* Shaders.metal */,
+				2BCFBCCA229C01660016A96B /* RenderTarget.m */,
+				2BCFBCCB229C01660016A96B /* SnapshotTarget.h */,
+				2BCFBCCC229C01660016A96B /* MLTexture.h */,
+				2BCFBCCD229C01660016A96B /* MLColor.m */,
+				2BCFBCCE229C01660016A96B /* MetalView.h */,
+				2BCFBCCF229C01660016A96B /* RenderTarget.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2BCFBCD0229C01660016A96B /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFBCD1229C01660016A96B /* WBMetalCanvasView.h */,
+				2BCFBCD2229C01660016A96B /* WBMetalCanvasView.m */,
+			);
+			path = Canvas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BCFBC7B229C012E0016A96B /* LaunchScreen.storyboard in Resources */,
+				2BCFBCDF229C01660016A96B /* glow.png in Resources */,
+				2BCFBCF1229C04730016A96B /* ddd.json in Resources */,
 				2BCFBC78229C012E0016A96B /* Assets.xcassets in Resources */,
 				2BCFBC76229C012D0016A96B /* Main.storyboard in Resources */,
+				2BCFBCDE229C01660016A96B /* pen-texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +459,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCFBCDC229C01660016A96B /* Printer.m in Sources */,
+				2BCFBCE5229C01660016A96B /* MetalView.m in Sources */,
+				2BCFBCDA229C01660016A96B /* GlowingBrush.m in Sources */,
+				2BCFBCD6229C01660016A96B /* LineStrip.m in Sources */,
+				2BCFBCE6229C01660016A96B /* Shaders.metal in Sources */,
+				2BCFBCE9229C01660016A96B /* WBMetalCanvasView.m in Sources */,
 				2BCFBC73229C012D0016A96B /* ViewController.m in Sources */,
+				2BCFBCD9229C01660016A96B /* MLLine.m in Sources */,
+				2BCFBCDB229C01660016A96B /* Brush.m in Sources */,
+				2BCFBCD4229C01660016A96B /* CanvasData.m in Sources */,
+				2BCFBCE3229C01660016A96B /* MLTexture.m in Sources */,
+				2BCFBCE4229C01660016A96B /* SnapshotTarget.m in Sources */,
+				2BCFBCE2229C01660016A96B /* PaintingGestureRecognizer.m in Sources */,
+				2BCFBCE8229C01660016A96B /* MLColor.m in Sources */,
+				2BCFBCE0229C01660016A96B /* Maths.m in Sources */,
 				2BCFBC7E229C012E0016A96B /* main.m in Sources */,
+				2BCFBCD5229C01660016A96B /* Canvas.m in Sources */,
+				2BCFBCE7229C01660016A96B /* RenderTarget.m in Sources */,
+				2BCFBCD7229C01660016A96B /* Chartlet.m in Sources */,
+				2BCFBCEF229C02480016A96B /* UIColor+Extension.m in Sources */,
+				2BCFBCE1229C01660016A96B /* BezierGenerator.m in Sources */,
 				2BCFBC70229C012D0016A96B /* AppDelegate.m in Sources */,
+				2BCFBCD8229C01660016A96B /* ChangeCanvasColor.m in Sources */,
+				2BCFBCDD229C01660016A96B /* Eraser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDY66CZNGW;
 				INFOPLIST_FILE = DrawGuessDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDY66CZNGW;
 				INFOPLIST_FILE = DrawGuessDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
