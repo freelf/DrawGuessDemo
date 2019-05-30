@@ -19,6 +19,9 @@
     self.metalCanvasView = [[WBMetalCanvasView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, self.view.bounds.size.width)];
     self.metalCanvasView.backgroundColor = [UIColor colorWithRed:0.97 green:0.98 blue:0.88 alpha:1.00];
     [self.view addSubview:self.metalCanvasView];
+    
+}
+- (void)startDraw {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         NSArray *pathArray = [self loadJsonDataWithPath:@"ddd"];
         NSDictionary *dict = @{
