@@ -122,7 +122,7 @@
     self.currentBrush = self.defaultBrush;
     
     self.printer = [[Printer alloc]initWithName:@"maliang.printer" textureId:nil target:self];
-    self.data = [[CanvasData alloc]init];
+    self.data = [[CanvasData alloc]initWithCanvas:self];
     self.data.canvas = self;
     ChangeCanvasColor *initialColorAction = [[ChangeCanvasColor alloc]initWithCanvasColor:[UIColor colorWithRed:0.97 green:0.98 blue:0.88 alpha:1.00] canvas:self];
     [self.data appendInitialCanvasColor:initialColorAction];

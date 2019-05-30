@@ -46,20 +46,32 @@
 @property (nonatomic, strong) MLTexture *privateUndoBaseTexture;
 @property (nonatomic, strong, readwrite) NSArray<id<CanvasElement>> *needDrawElements;
 
+@property (nonatomic, strong) NSArray<id<MTLTexture>> *reuseTextureArray;
+@property (nonatomic, assign) NSUInteger snapshotTimes; // 保存截图的次数
 @end
 @implementation CanvasData
-- (instancetype)init
-{
+- (instancetype)initWithCanvas:(Canvas *)canvas {
     self = [super init];
     if (self) {
+        self.canvas = canvas;
         self.clearedElements = @[].mutableCopy;
         self.elements = @[].mutableCopy;
         self.needDrawElements = @[].mutableCopy;
         self.undoArray = @[].mutableCopy;
         self.changCanvasColorActions = @[].mutableCopy;
+        
+        NSMutableArray *array = @[].mutableCopy;
+        for (NSUInteger i = 0; i < 2; i++) {
+            MTLTextureDescriptor *textureDescriptor = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:self.canvas.colorPixelFormat width:self.canvas.drawableSize.width height:self.canvas.drawableSize.height mipmapped:NO];
+            textureDescriptor.usage = MTLTextureUsageShaderRead | MTLTextureUsageShaderWrite;
+            id<MTLTexture> texture = [self.canvas.device newTextureWithDescriptor:textureDescriptor];
+            [array addObject:texture];
+        }
+        self.reuseTextureArray = array;
     }
     return self;
 }
+
 - (void)appendLines:(NSArray<MLLine *> *)lines withBrush:(Brush *)brush {
     if (lines.count <= 0) {
         return;
@@ -138,13 +150,17 @@
 }
 - (void)makeUndoBaseTexture {
     if (self.elements.count > 0 && self.elements.count % (self.canUndoCount + 1) == 0) {
-
-        MTLTextureDescriptor *textureDescriptor = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:self.canvas.colorPixelFormat width:self.canvas.drawableSize.width height:self.canvas.drawableSize.height mipmapped:NO];
-        textureDescriptor.usage = MTLTextureUsageShaderRead | MTLTextureUsageShaderWrite;
-        id<MTLTexture> texture = [self.canvas.device newTextureWithDescriptor:textureDescriptor];
-        [self.canvas.screenTarget copyTextureToTexture:texture];
+        self.snapshotTimes++;
+        id<MTLTexture> snapshotTexture;
+        if (self.snapshotTimes / 2 == 0) {
+            snapshotTexture = self.reuseTextureArray[1];
+        } else {
+            snapshotTexture = self.reuseTextureArray[0];
+        }
+        [self.canvas.screenTarget copyTextureToTexture:snapshotTexture];
         Chartlet *undoBase = [[Chartlet alloc]initWithCenter:CGPointMake(self.canvas.bounds.size.width * 0.5, self.canvas.bounds.size.height * 0.5) size:self.canvas.bounds.size textureId:[NSUUID UUID] angle:0 canvas:self.canvas];
-        undoBase.texture = texture;
+        undoBase.texture = snapshotTexture;
+
         [self.elements removeLastObject];
         [self.elements addObject:undoBase];
         

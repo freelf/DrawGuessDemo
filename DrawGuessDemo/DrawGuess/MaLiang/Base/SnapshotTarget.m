@@ -17,8 +17,7 @@
     self = [super init];
     if (self) {
         self.canvas = canvas;
-        CGSize size = canvas.bounds.size;
-        self = [super initWithSize:size pixelFormat:canvas.colorPixelFormat device:canvas.device];
+        self = [super initWithSize:self.canvas.drawableSize pixelFormat:canvas.colorPixelFormat device:canvas.device];
     }
     return self;
 }

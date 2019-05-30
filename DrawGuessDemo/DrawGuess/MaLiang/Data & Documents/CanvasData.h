@@ -42,7 +42,7 @@ typedef void  (^EventHandler)(CanvasData *);
 @property (nonatomic, assign) BOOL canRedo;
 @property (nonatomic, assign) BOOL canUndo;
 @property (nonatomic, assign) NSUInteger canUndoCount;
-
+- (instancetype)initWithCanvas:(Canvas *)canvas;
 
 - (void)appendLines:(NSArray<MLLine *>*)lines withBrush:(Brush*)brush;
 - (void)appendChartlet:(Chartlet *)chartlet;

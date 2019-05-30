@@ -62,7 +62,7 @@
     return -atan2f(p.y, p.x);
 }
 + (vector_float4)pointToFloat4:(CGPoint)point {
-    vector_float4 float4 = {point.x, point.y, 0, 1};
+    vector_float4 float4 = {roundf(point.x), roundf(point.y), 0, 1};
     return float4;
 }
 + (vector_float2)pointToFloat2:(CGPoint)point {
